@@ -13,12 +13,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "repchek: every workout moves you forward",
+  title: "Repchek | Every workout moves you forward",
   description:
     "Count your reps, get live form feedback, and track your progress at home or in the gym.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "repchek: every workout moves you forward",
+    title: "Repchek | Every workout moves you forward",
     description:
       "Count your reps, get live form feedback, and track your progress at home or in the gym.",
     url: SITE_URL,
