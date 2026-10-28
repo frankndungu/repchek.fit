@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import { GA_ID, SITE_URL } from "@/lib/config";
 import "./globals.css";
 
@@ -43,6 +44,7 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body>
         {children}
+        <Analytics />
         {GA_ID && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
