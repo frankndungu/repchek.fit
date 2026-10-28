@@ -1,7 +1,7 @@
 import { USE_MEDIA } from "@/lib/config";
 
 const TILES = [
-  { cls: "sand s2", chip: "At home", title: "Home workouts", text: "Use the space you have." },
+  { cls: "sand s2", chip: "At home", title: "Home workouts", text: "Check your form at home, in the space you have." },
   { cls: "s2", chip: "Supported today", title: "Bodyweight training", text: "Get feedback on supported exercises." },
   { cls: "dark s2", chip: "More coming", title: "More ways to move", text: "Mountain climbers work today. More exercises are coming." },
 ];

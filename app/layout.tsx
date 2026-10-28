@@ -13,22 +13,40 @@ const inter = Inter({
   display: "swap",
 });
 
+const TITLE = "Repchek | AI Workout Form Checker with Rep Counting";
+const DESCRIPTION =
+  "Repchek uses your phone camera to count your reps and give live form feedback as you work out, at home or in the gym. Try it free in your browser.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Repchek | Every workout moves you forward",
-  description:
-    "Count your reps, get live form feedback, and track your progress at home or in the gym.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Repchek | Every workout moves you forward",
-    description:
-      "Count your reps, get live form feedback, and track your progress at home or in the gym.",
-    url: SITE_URL,
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/",
     siteName: "repchek",
     type: "website",
-    images: [{ url: "/og.png", width: 512, height: 512, alt: "repchek logo" }],
+    images: [{ url: "/og.png", width: 1080, height: 1080, alt: "repchek logo" }],
   },
-  twitter: { card: "summary" },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/og.png"],
+  },
+};
+
+const JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "repchek",
+  url: SITE_URL,
+  description: DESCRIPTION,
+  applicationCategory: "HealthApplication",
+  operatingSystem: "Web browser",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
 };
 
 export const viewport: Viewport = {
@@ -44,6 +62,10 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body>
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD).replace(/</g, "\\u003c") }}
+        />
         <Analytics />
         {GA_ID && (
           <>

@@ -42,7 +42,7 @@ export function HowItWorks() {
                 </div>
               </div>
             </div>
-            <p className="cap">2. Get feedback as you work out.</p>
+            <p className="cap">2. Get live form feedback as you work out.</p>
           </div>
           <div>
             <div className="ph" role="img" aria-label="Illustration of the session summary screen">
