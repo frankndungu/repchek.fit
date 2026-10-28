@@ -51,3 +51,6 @@ export const LIFTER = {
   quote:
     "I usually swing a lot when working my back and have no idea with whether to look up or down but Repcheck helped me improve my form by counting the good reps and the voice narration",
 };
+
+// Google Analytics measurement ID. Leave empty to disable tracking.
+export const GA_ID = "G-YKH16JFW7G";
