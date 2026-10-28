@@ -4,13 +4,13 @@ export function HowItWorks() {
   return (
     <section className="center">
       <div className="wrap">
-        <h2>Pick. Lift. Review.</h2>
-        <p className="lead">Three screens is all there is to it.</p>
+        <h2>Work out. Review. Improve.</h2>
+        <p className="lead">Three simple steps to get started.</p>
         <div className="row3">
           <div>
             <div className="ph" role="img" aria-label="Illustration of the exercise picker screen">
               <div className="scr" aria-hidden="true">
-                <h4>Repchek</h4>
+                <h4>repchek</h4>
                 <span className="lbl">Pick your lift</span>
                 <div>
                   <span className="pill on">Barbell row</span>
@@ -28,7 +28,7 @@ export function HowItWorks() {
                 <div className="start">Start camera</div>
               </div>
             </div>
-            <p className="cap">1. Pick</p>
+            <p className="cap">1. Choose your exercise.</p>
           </div>
           <div>
             <div className="ph" role="img" aria-label="Illustration of live form feedback on a barbell row">
@@ -42,7 +42,7 @@ export function HowItWorks() {
                 </div>
               </div>
             </div>
-            <p className="cap">2. Lift</p>
+            <p className="cap">2. Get feedback as you work out.</p>
           </div>
           <div>
             <div className="ph" role="img" aria-label="Illustration of the session summary screen">
@@ -62,10 +62,9 @@ export function HowItWorks() {
                 </p>
               </div>
             </div>
-            <p className="cap">3. Review</p>
+            <p className="cap">3. Review your workout and track your progress.</p>
           </div>
         </div>
-        <p className="note">Illustrative screens with example numbers.</p>
       </div>
     </section>
   );

@@ -4,13 +4,13 @@ export function Hero() {
   return (
     <header className="hero center">
       <div className="wrap">
-        <h1>Know if you’re <em>improving</em> at the gym.</h1>
+        <h1>Every workout moves you <em>forward.</em></h1>
         <p className="lead">
-          Get live form feedback, count your reps automatically, and track your
-          progress over time.
+          Count your reps, get live form feedback, and track your progress at
+          home or in the gym.
         </p>
         <div className="row">
-          <a className="btn" href={APP_URL}>Try Repchek Free</a>
+          <a className="btn" href={APP_URL}>Try repchek free</a>
           <a className="btn ghost" href="#demo">Watch the demo</a>
         </div>
         <div className="stage" id="demo">
@@ -22,7 +22,7 @@ export function Hero() {
                 controls
                 playsInline
                 preload="metadata"
-                aria-label="Repchek demo video"
+                aria-label="repchek demo video"
               >
                 {DEMO.captions && (
                   <track kind="captions" src={DEMO.captions} srcLang="en" label="English" default />
@@ -31,7 +31,7 @@ export function Hero() {
             ) : (
               <div className="demo">
                 <div className="play" aria-hidden="true" />
-                Demo video coming soon
+                Demo video goes here
               </div>
             )}
           </div>

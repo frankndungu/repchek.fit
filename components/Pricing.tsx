@@ -4,7 +4,7 @@ export function Pricing() {
   return (
     <section id="pricing" style={{ paddingTop: 0 }}>
       <div className="wrap center">
-        <h2>Start free. <em>Upgrade</em> to see your progress.</h2>
+        <h2>Start free. <em>Track</em> your progress.</h2>
         <div className="bento">
           <div className="tile s3">
             <h3>Free</h3>
@@ -14,7 +14,7 @@ export function Pricing() {
               <li>Automatic rep counting</li>
               <li>Workout summary to share</li>
             </ul>
-            <a className="btn ghost" href={APP_URL}>Try Repchek Free</a>
+            <a className="btn ghost" href={APP_URL}>Try repchek free</a>
           </div>
           <div className="tile dark s3">
             <h3>Premium</h3>

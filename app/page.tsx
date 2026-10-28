@@ -2,6 +2,8 @@ import { Colors } from "@/components/Colors";
 import { Faq } from "@/components/Faq";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
+import { Lifter } from "@/components/Lifter";
+import { UseCases } from "@/components/UseCases";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Nav } from "@/components/Nav";
 import { Pricing } from "@/components/Pricing";
@@ -13,7 +15,9 @@ export default function Home() {
       <Nav />
       <main id="top">
         <Hero />
+        <UseCases />
         <HowItWorks />
+        <Lifter />
         <Colors />
         <Proof />
         <Pricing />

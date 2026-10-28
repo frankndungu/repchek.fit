@@ -4,7 +4,7 @@ export function Proof() {
   return (
     <section id="proof" style={{ paddingTop: 0 }}>
       <div className="wrap center">
-        <h2>What lifters say.</h2>
+        <h2>What people are saying.</h2>
         <div className="bento">
           <figure className="tile dark s4" style={{ margin: 0 }}>
             <blockquote className="q" style={{ margin: 0 }}>
@@ -51,9 +51,9 @@ export function Proof() {
               gap: 16,
             }}
           >
-            <h3 style={{ fontSize: 28 }}>Your turn.</h3>
+            <h3 style={{ fontSize: 28 }}>Make every workout count.</h3>
             <a className="btn white" href={APP_URL}>
-              Try Repchek Free
+              Try repchek free
             </a>
           </div>
         </div>

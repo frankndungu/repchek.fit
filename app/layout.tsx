@@ -13,18 +13,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Repchek | fix your form and track your progress",
+  title: "repchek: every workout moves you forward",
   description:
-    "Repchek watches your set with your phone camera, tells you when your form is wrong, counts your reps and tracks your progress.",
+    "Count your reps, get live form feedback, and track your progress at home or in the gym.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Repchek: know if you’re improving at the gym",
+    title: "repchek: every workout moves you forward",
     description:
-      "Fix your form live, count your reps and track your progress. Works in your phone browser.",
+      "Count your reps, get live form feedback, and track your progress at home or in the gym.",
     url: SITE_URL,
-    siteName: "Repchek",
+    siteName: "repchek",
     type: "website",
-    images: [{ url: "/og.png", width: 512, height: 512, alt: "Repchek logo" }],
+    images: [{ url: "/og.png", width: 512, height: 512, alt: "repchek logo" }],
   },
   twitter: { card: "summary" },
 };

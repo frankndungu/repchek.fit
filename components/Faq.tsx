@@ -1,16 +1,15 @@
 const ITEMS = [
-  ["Does it work on my phone?", "Yes. Open it in Safari or Chrome. No app download."],
-  ["Do I need anything else?", "No. Just a place to lean your phone so the camera sees your whole body."],
+  ["Does it work on my phone?", "Yes. Open repchek in your phone’s browser."],
+  ["Do I need anything else?", "Just your phone and a way to position it so the camera can see you."],
   ["Does my video get uploaded?", "No. The camera is analyzed on your phone, in your browser."],
-  ["Which exercises work?", "Deadlift, barbell row, lat pulldown, bench press, biceps curl, triceps, push-ups, mountain climbers and more. More are coming."],
-  ["Does it replace a coach?", "No. Repchek gives automated feedback from a single phone camera, so it can miss things. It isn’t medical advice or a substitute for a qualified trainer."],
+  ["Which exercises work?", "Push-ups and mountain climbers work well. Other supported exercises include barbell rows, deadlifts, biceps curls and triceps exercises. Results depend on the exercise and camera angle."],
 ];
 
 export function Faq() {
   return (
     <section id="faq" style={{ paddingTop: 0 }}>
       <div className="wrap">
-        <h2>Questions.</h2>
+        <h2>Questions?</h2>
         <div style={{ marginTop: 24 }}>
           {ITEMS.map(([q, a]) => (
             <details key={q}>

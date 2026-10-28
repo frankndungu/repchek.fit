@@ -6,7 +6,7 @@ export function Nav() {
     <nav aria-label="Main">
       <div className="wrap">
         <Brand />
-        <a className="btn" href={APP_URL}>Try Repchek Free</a>
+        <a className="btn" href={APP_URL}>Try repchek free</a>
       </div>
     </nav>
   );
