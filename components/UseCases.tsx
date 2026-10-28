@@ -18,7 +18,7 @@ export function UseCases() {
             return (
               <div className={`tile ${t.cls}`} key={t.title}>
                 {m?.src && (
-                  <div className="slot">
+                  <div className={m.whole ? "slot whole" : "slot"}>
                     {/\.(mp4|webm|mov)$/i.test(m.src) ? (
                       <video src={m.src} muted loop playsInline autoPlay aria-label={m.alt} />
                     ) : (

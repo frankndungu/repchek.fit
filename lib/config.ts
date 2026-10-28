@@ -24,7 +24,8 @@ export const CONTACT_EMAIL = "hello@repchek.fit";
 
 // Optional real footage for the "Your workout. Your space." tiles, in tile
 // order. Leave a src empty to hide that slot. Files go in /public.
-export const USE_MEDIA: { src: string; alt: string }[] = [
+// whole: on mobile, show the full image instead of cropping it to fit.
+export const USE_MEDIA: { src: string; alt: string; whole?: boolean }[] = [
   {
     src: "https://images.openai.com/static-rsc-4/NL-1T9yiEgF6U34xkMUxuymkBzOcFOqCDeZkZ3KGQKh_n6jzdQQQBCvsYiL3J5dgzQXLrYzprrpjSEm-oLCtQKdMrQ6FZtRRzNN-9PeCgrRtHfPNanQ-b1RM0h3KUnnLjsMVejUPKuvPzC7gVtZVvnHoLatrVtT2tiH2CNNIZo9vgSQuduvu9u-DZR9UvHnG?purpose=fullsize",
     alt: "home workout",
@@ -32,6 +33,7 @@ export const USE_MEDIA: { src: string; alt: string }[] = [
   {
     src: "https://res.cloudinary.com/kwishi/image/upload/v1793174628/IMG_7634_kumdrr.jpg",
     alt: "repchek poster",
+    whole: true,
   },
   {
     src: "https://res.cloudinary.com/kwishi/image/upload/v1793173965/IMG_7710_iminou.png",
