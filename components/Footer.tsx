@@ -21,6 +21,8 @@ export function Footer() {
             </svg>
             TikTok
           </a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
           <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
         </div>
       </div>

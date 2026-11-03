@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export function Brand() {
+export function Brand({ href = "#top" }: { href?: string }) {
   return (
-    <a className="brand" href="#top" aria-label="repchek home">
+    <a className="brand" href={href} aria-label="repchek home">
       <Image
         src="/repchek-logo.svg"
         alt=""

@@ -1,0 +1,131 @@
+import type { Metadata } from "next";
+import { LegalPage } from "@/components/LegalPage";
+import { CONTACT_EMAIL } from "@/lib/config";
+
+export const metadata: Metadata = {
+  title: "Terms of service | repchek",
+  description: "The rules for using repchek.",
+  alternates: { canonical: "/terms" },
+};
+
+export default function Terms() {
+  return (
+    <LegalPage title="Terms of service" updated="3 November 2026">
+      <div className="summary">
+        <p>
+          <strong>The short version.</strong> repchek is a coach in your phone,
+          not a doctor. Train within your limits. Use the app fairly. We do our
+          best to keep it working, but we cannot promise it will be perfect.
+        </p>
+      </div>
+
+      <h2>Agreeing to these terms</h2>
+      <p>
+        By using repchek at repchek.fit or app.repchek.fit, you agree to these
+        terms and to our <a href="/privacy">privacy policy</a>. If you do not
+        agree, please do not use repchek.
+      </p>
+
+      <h2>What repchek is</h2>
+      <p>
+        repchek uses your camera to count reps and give feedback on your form
+        while you work out. It runs in your browser. We may add, change or
+        remove features over time.
+      </p>
+
+      <h2>Your account</h2>
+      <ul>
+        <li>You must be at least 16 years old.</li>
+        <li>Give us a real email address that you control.</li>
+        <li>
+          Keep your sign in codes to yourself. You are responsible for activity
+          on your account.
+        </li>
+        <li>Tell us if you think someone else has used your account.</li>
+      </ul>
+
+      <h2>Health and safety</h2>
+      <p>
+        repchek is not medical advice and does not replace a doctor, physio or
+        qualified coach. Its rep counts and form feedback come from a camera and
+        software, and they can be wrong. Results depend on lighting, camera
+        angle, clothing and the exercise.
+      </p>
+      <p>
+        Exercise carries a risk of injury. Check with a doctor before you start
+        if you have a health condition. Stop if you feel pain or dizziness. Set
+        up your space safely and never rely on repchek to keep you safe. You
+        train at your own risk.
+      </p>
+
+      <h2>Using repchek fairly</h2>
+      <p>Please do not:</p>
+      <ul>
+        <li>break the law or use repchek to harm anyone;</li>
+        <li>try to get into accounts or systems that are not yours;</li>
+        <li>attack, overload, scrape or reverse engineer the service;</li>
+        <li>use repchek to film people without their consent;</li>
+        <li>copy or resell repchek without our written permission.</li>
+      </ul>
+
+      <h2>Your data</h2>
+      <p>
+        Your workouts and your account details belong to you. You give us
+        permission to store and process them only so we can run repchek for you,
+        as described in the privacy policy. Your camera video is analysed on
+        your device and is not uploaded.
+      </p>
+
+      <h2>Free and paid plans</h2>
+      <p>
+        repchek is free to use today. We plan to add a paid plan called Premium.
+        If we do, we will show the price and what it includes before you buy,
+        and we will not charge you without your clear agreement. Features that
+        are free today may change, and we will give notice of changes that
+        matter.
+      </p>
+
+      <h2>Our property</h2>
+      <p>
+        The repchek name, logo, design and software belong to us or our
+        licensors. These terms give you a personal right to use repchek. They do
+        not give you ownership of any of it.
+      </p>
+
+      <h2>No guarantees</h2>
+      <p>
+        We work to keep repchek available and accurate, but it is provided as
+        it is and as available. We do not promise that it will be uninterrupted,
+        error free, or right for your needs.
+      </p>
+
+      <h2>Limits on our responsibility</h2>
+      <p>
+        To the extent the law allows, we are not responsible for injury, loss
+        or damage that comes from using repchek or from relying on its counts
+        and feedback, or for indirect or consequential loss. Nothing in these
+        terms limits responsibility that cannot be limited by law.
+      </p>
+
+      <h2>Ending your use</h2>
+      <p>
+        You can stop using repchek at any time and ask us to delete your account
+        by emailing <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. We
+        may suspend or close an account that breaks these terms or puts the
+        service or other people at risk.
+      </p>
+
+      <h2>Changes to these terms</h2>
+      <p>
+        We may update these terms. If a change matters, we will update the date
+        above and tell signed in users in the app or by email. If you keep using
+        repchek after a change, you accept the new terms.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+      </p>
+    </LegalPage>
+  );
+}
