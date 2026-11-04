@@ -43,6 +43,15 @@ export default function Privacy() {
           you are signed in.
         </li>
         <li>
+          <strong>Challenges.</strong> If you make or join a challenge, we keep
+          the challenge name, note and dates, and who joined. Everyone in a
+          challenge can see its Hall of Gains, which shows each member’s first
+          name or display name, their number of workouts and their clean reps
+          within the challenge dates. Anyone with a challenge link can see the
+          challenge name, note, who made it and how many people joined, once
+          they sign in. They cannot see your other workouts.
+        </li>
+        <li>
           <strong>Usage and device data.</strong> Pages visited, simple events
           such as starting or finishing a session, browser type, and your
           approximate country. We use this to see what works and what breaks.
@@ -77,6 +86,7 @@ export default function Privacy() {
           To work out your progress, streaks and, for Premium, your charts and
           suggestions from your saved workouts.
         </li>
+        <li>To run challenges and show the Hall of Gains to its members.</li>
         <li>To switch Premium on and off to match your subscription.</li>
         <li>To send you the sign in code you ask for.</li>
         <li>To fix bugs and improve repchek.</li>
@@ -130,7 +140,10 @@ export default function Privacy() {
         You can ask us to show you the data we hold about you, correct it, or
         delete it. You can also ask us to stop using it in a particular way.
         Email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> from the
-        address on your account and we will reply within 30 days. You can sign
+        address on your account and we will reply within 30 days. You can leave
+        any challenge in the app at any time, and your name and totals then
+        disappear from its Hall of Gains. Deleting your account removes you
+        from every challenge and deletes the challenges you made. You can sign
         out of the app at any time from More options.
       </p>
 
