@@ -10,12 +10,13 @@ export const metadata: Metadata = {
 
 export default function Terms() {
   return (
-    <LegalPage title="Terms of service" updated="3 November 2026">
+    <LegalPage title="Terms of service" updated="4 November 2026">
       <div className="summary">
         <p>
           <strong>The short version.</strong> repchek is a coach in your phone,
           not a doctor. Train within your limits. Use the app fairly. We do our
           best to keep it working, but we cannot promise it will be perfect.
+          Premium is $3.99 a month and you can cancel any time.
         </p>
       </div>
 
@@ -76,13 +77,64 @@ export default function Terms() {
         your device and is not uploaded.
       </p>
 
-      <h2>Free and paid plans</h2>
+      <h2>Free and Premium</h2>
       <p>
-        repchek is free to use today. We plan to add a paid plan called Premium.
-        If we do, we will show the price and what it includes before you buy,
-        and we will not charge you without your clear agreement. Features that
-        are free today may change, and we will give notice of changes that
-        matter.
+        repchek is free to use. Free includes your complete workout history,
+        reports for past sessions, personal bests, streaks, XP, milestones and
+        live form feedback with rep counting.
+      </p>
+      <p>
+        Premium is a paid plan. It adds deeper analytics: progress charts,
+        trends, comparisons between sessions, and suggestions for what to try
+        next. We may add or change Premium features over time. If we remove
+        something that matters to you, we will tell you.
+      </p>
+
+      <h2>Subscriptions and payment</h2>
+      <ul>
+        <li>
+          Premium costs $3.99 US dollars a month, billed monthly in advance.
+          The checkout shows the total, including any tax that applies to you,
+          before you pay.
+        </li>
+        <li>
+          It renews every month until you cancel. You agree to be charged each
+          month until then.
+        </li>
+        <li>
+          Payments are handled by Polar, which is the seller of record. Polar’s
+          terms apply to the payment. We never see your card number.
+        </li>
+        <li>
+          If a payment fails, Polar tries again. Premium stays on while it
+          retries. If the payment still fails, your plan goes back to Free and
+          your saved sessions stay.
+        </li>
+        <li>
+          We will tell you at least 30 days before a price change takes effect.
+          You can cancel before it does.
+        </li>
+      </ul>
+
+      <h2>Cancelling</h2>
+      <p>
+        You can cancel at any time from Manage subscription on your Profile,
+        which opens Polar’s customer portal. You keep Premium until the end of
+        the month you have paid for. We do not charge you again after that.
+      </p>
+      <p>
+        Deleting your account does not cancel your subscription. Cancel first,
+        then delete your account.
+      </p>
+
+      <h2>Refunds</h2>
+      <p>
+        If Premium is not right for you, email{" "}
+        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> within 7 days
+        of your first payment and we will refund it. After that, we do not
+        refund the part of a month you have already paid for, but you can
+        cancel at any time. This does not limit any rights you have under the
+        law where you live.
       </p>
 
       <h2>Our property</h2>
@@ -109,8 +161,8 @@ export default function Terms() {
 
       <h2>Ending your use</h2>
       <p>
-        You can stop using repchek at any time and ask us to delete your account
-        by emailing <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. We
+        You can stop using repchek at any time. You can delete your account from
+        your Profile, or ask us to by emailing <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. We
         may suspend or close an account that breaks these terms or puts the
         service or other people at risk.
       </p>

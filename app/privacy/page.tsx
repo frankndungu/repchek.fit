@@ -11,13 +11,15 @@ export const metadata: Metadata = {
 
 export default function Privacy() {
   return (
-    <LegalPage title="Privacy policy" updated="3 November 2026">
+    <LegalPage title="Privacy policy" updated="4 November 2026">
       <div className="summary">
         <p>
           <strong>The short version.</strong> repchek reads your camera on your
           device to count reps and check your form. Your video is not uploaded.
           We keep your email and your workout results so your account works. We
           do not sell your data and we do not show ads.
+          If you subscribe to Premium, Polar takes the payment and we never
+          see your card number.
         </p>
       </div>
 
@@ -46,6 +48,13 @@ export default function Privacy() {
           approximate country. We use this to see what works and what breaks.
         </li>
         <li>
+          <strong>Subscription details.</strong> If you subscribe to Premium,
+          we receive from Polar whether your subscription is active, when it
+          renews or ends, and a reference that links it to your account. Polar
+          collects your payment details, billing name and address, and tax
+          information itself. We do not receive your card number.
+        </li>
+        <li>
           <strong>Messages.</strong> If you email us, we keep the email and our
           reply.
         </li>
@@ -64,6 +73,11 @@ export default function Privacy() {
       <ul>
         <li>To sign you in and keep your account secure.</li>
         <li>To save your workouts and show them back to you.</li>
+        <li>
+          To work out your progress, streaks and, for Premium, your charts and
+          suggestions from your saved workouts.
+        </li>
+        <li>To switch Premium on and off to match your subscription.</li>
         <li>To send you the sign in code you ask for.</li>
         <li>To fix bugs and improve repchek.</li>
         <li>To answer your questions.</li>
@@ -79,6 +93,11 @@ export default function Privacy() {
         <li>Supabase, for sign in and for storing your account and workouts.</li>
         <li>Resend, for sending sign in code emails.</li>
         <li>Google, if you choose to sign in with Google.</li>
+        <li>
+          Polar, for Premium payments. Polar is the seller of record, so it
+          handles your payment, tax and receipts. Its own privacy policy
+          applies to the details you give it.
+        </li>
         <li>Vercel, for hosting the site and the app, and for basic usage statistics.</li>
         <li>Google Analytics, for usage statistics on repchek.fit.</li>
       </ul>
@@ -102,6 +121,8 @@ export default function Privacy() {
         you ask, we delete them within 30 days. Backups may hold a copy for a
         short time longer. We may keep basic records we are required by law to
         keep.
+        Polar keeps payment and tax records for as long as the law requires,
+        even after your account is deleted here.
       </p>
 
       <h2>Your choices</h2>
@@ -130,8 +151,15 @@ export default function Privacy() {
 
       <h2>Payments</h2>
       <p>
-        repchek does not take payments today. If we add a paid plan, we will
-        update this policy first and name the payment provider.
+        Premium is paid through Polar, which acts as the seller of record.
+        When you subscribe, you enter your card or payment details on
+        Polar’s checkout page, not on repchek. We never see or store your
+        card number. Polar tells us whether your subscription is active so we
+        can switch Premium on or off.
+      </p>
+      <p>
+        You can cancel and see your receipts in the customer portal that opens
+        from Manage subscription on your Profile.
       </p>
 
       <h2>Changes to this policy</h2>
